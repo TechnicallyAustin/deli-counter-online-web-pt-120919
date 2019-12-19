@@ -10,13 +10,12 @@ def line(katz_deli)
   elsif katz_deli.count > 0 
     while counter < katz_deli.count do
       deli_line = "#{place}. #{katz_deli[counter]}"
-      line_status = ["The line is currently:}"]
-      line_status << deli_line
+      line_status = "The line is currently:"
+      longer_line = line_status + deli_line
       counter += 1
       place += 1
     end
-    final = line_status.join
-    puts final 
+   puts longer_line
   end
 end
   
