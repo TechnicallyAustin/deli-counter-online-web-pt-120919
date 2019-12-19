@@ -3,14 +3,16 @@ katz_deli = []
 
 def line(katz_deli)
   counter = 0
-  place = 2
+  place = 1
   if katz_deli.count == 0 
     puts "The line is currently empty."
   
   elsif katz_deli.count > 0 
     while counter < katz_deli.count do
-      deli_line = katz_deli.join(" #{place}. ")
-      puts "The line is currently: 1. #{deli_line}"
+      deli_line = "#{place}. #{katz_deli[counter]}"
+      puts "The line is currently: #{deli_line}"
+      counter += 1
+      place += 1
     end
   end
 end
