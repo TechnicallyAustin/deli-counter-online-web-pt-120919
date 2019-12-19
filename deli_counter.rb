@@ -12,10 +12,11 @@ def line(katz_deli)
       deli_line = "#{place}. #{katz_deli[counter]}"
       line_status = ["The line is currently:}"]
       line_status << deli_line
-      puts line_status
       counter += 1
       place += 1
     end
+    final = line_status.join
+    puts final 
   end
 end
   
