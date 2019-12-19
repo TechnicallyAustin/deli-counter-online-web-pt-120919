@@ -2,16 +2,17 @@ require 'pry'
 katz_deli = []
 
 def line(katz_deli)
-  counter = 0
-  place = 1
   if katz_deli.count == 0 
     puts "The line is currently empty."
   
   elsif katz_deli.count > 0 
+  counter = 0
+  place = 1
     while counter < katz_deli.count do
+      katz_deli.each do 
       deli_line = "#{place}. #{katz_deli[counter]}"
-      line_status = "The line is currently:"
-      longer_line = line_status + deli_line
+      line_status = ["The line is currently:"]
+    
       counter += 1
       place += 1
     end
