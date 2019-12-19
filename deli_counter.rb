@@ -3,25 +3,16 @@ katz_deli = []
 
 def line(katz_deli)
   counter = 0
-  counts = 1
+  place = 1
   if katz_deli.count == 0 
     puts "The line is currently empty."
-    elsif katz_deli.count > 0
-    katz_deli.each do |line|
-      msg = ["The line is currently: "]
-      name = katz_deli[counter]
-      pos_name = "#{counts}. #{name}"
-      msg_arr = []
- 
-      new_msg = msg.join("#{counts}. ")
-      counter += 1
-      counts += 1
-      msg_arr << msg_2
+  
+  elsif katz_deli.count > 0 
+    while counter < katz_deli.count do
+      deli_line = katz_deli.join("#{place}.")
+      puts "The line is currently: #{deli_line}"
     end
-    msg_str = msg_arr.join("#{counts}.")
-    puts msg + msg_arr
   end
-  binding.pry
 end
   
 
