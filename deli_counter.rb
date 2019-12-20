@@ -18,6 +18,7 @@ def line(katz_deli)
     new_str = name_and_place.join(" ")
     puts "The line is currently: #{new_str}"
     end
+    binding.pry
   end
 
   
