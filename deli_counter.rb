@@ -15,10 +15,12 @@ def line(katz_deli)
       counter += 1
       place += 1
     end
+    binding.pry
     new_str = name_and_place.join(" ")
     puts "The line is currently: #{new_str}"
+    
     end
-    binding.pry
+    
   end
 
   
