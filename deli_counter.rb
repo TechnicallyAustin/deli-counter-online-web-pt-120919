@@ -10,7 +10,7 @@ def line(katz_deli)
   place = 1
   formatted_arr = []
     while counter < katz_deli.count do
-      name_and_place =["#{place}. #{katz_deli[counter]}"]
+      name_and_place = ["#{place}. #{katz_deli[counter]}"]
       formatted_arr << name_and_place
       counter += 1
       place += 1
